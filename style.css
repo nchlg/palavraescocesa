@@ -1,7 +1,28 @@
 body {
     background-color: #6495ed;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
-    background-color: #f5deb3;
+    display: block;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.column {
+    float: left;
+    width: 40%;
+    padding: 1rem;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
