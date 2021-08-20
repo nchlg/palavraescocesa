@@ -4,17 +4,39 @@ body {
     padding: 0;
 }
 
+header, footer {
+    padding: 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+h1 {
+    padding: 0 1rem 0 1rem;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
 footer {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: #ffffff;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
 }
 
-.column {
+.menu-item {
+    display: inline;
+}
+
+.footer-column {
     float: left;
     width: 40%;
     padding: 1rem;
@@ -25,4 +47,13 @@ footer {
     content: "";
     display: table;
     clear: both;
+}
+
+/* mobile */
+@media only screen and (max-width: 812px) {
+    .column {
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 }
