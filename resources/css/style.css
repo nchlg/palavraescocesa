@@ -1,0 +1,295 @@
+/* fonts */
+
+@font-face {
+    font-family: 'IM Fell English';
+    src: url('../fonts/imfellenglish-regular-webfont.woff2') format('woff2'),
+         url('../fonts/imfellenglish-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IM Fell English Italic';
+    src: url('../fonts/imfellenglish-italic-webfont.woff2') format('woff2'),
+         url('../fonts/imfellenglish-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Garamond Bold';
+    src: url('../fonts/cormorantgaramond-bold-webfont.woff2') format('woff2'),
+         url('../fonts/cormorantgaramond-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Garamond Light';
+    src: url('../fonts/cormorantgaramond-light-webfont.woff2') format('woff2'),
+         url('../fonts/cormorantgaramond-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Garamond Light Italic';
+    src: url('../fonts/cormorantgaramond-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/cormorantgaramond-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* vars */
+
+:root {
+    --paper-sheet-grey: #fffefa;
+    --scots-navy: #161b1f;
+    --anti-royalty-blue: #6495ed;
+}
+
+/* focus */
+
+a:focus {
+    outline-color: var(--anti-royalty-blue);
+}
+
+/* body */
+
+body {
+    background-color: #6495ed;
+    background-color: #2e4057;
+    background-color: #424242;
+    background-color: #24313b;
+    background-color: #091721;
+    background-color: #25291c;
+    background-color: #262625;
+    background-color: #194a6e;
+    background-color: #6a8fa9;
+    background-color: #97b2c4;
+    background-color: #cddbe5;
+    background-color: #96918d;
+    background-color: #bfb5ae;
+    background-color: #ba5a31;
+    background-color: #6b0f1a;
+    background-color: #b02e0c;
+    background-color: #b96d40;
+    background-color: #9e7459;
+    background-color: #ce5340;
+    background-color: #364b59;
+    background-color: #8fa2b0;
+    background-color: #445B74;
+    background-color: #40546A;
+    background-color: #3C5567;
+    background-color: #466377;
+    background-color: #3A4D5A; 
+    background-color: #404D56; 
+    background-color: #3D4D59; 
+    background-color: #3e474f; 
+    background-color: #D9D9D9;
+    background-color: #344A5D;
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--paper-sheet-grey);
+    color: var(--scots-navy);
+    font-family: 'Garamond Light', serif;
+}
+
+header, footer {
+    padding: 3rem 15%;
+}
+
+/* logo */
+
+.logo {
+    width: 10rem;
+    max-width: 385px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.logo .contrasting-logo {
+    display: none;
+}
+
+.logo:hover img:first-child {
+    display: none;
+}
+
+.logo:hover img:last-child {
+    display: inline-block;
+}
+
+/* menu */
+
+ul {
+    margin: 0;
+}
+
+.menu ul {
+    padding: 3rem 0;
+    list-style-type: none;
+}
+
+.menu-item {
+    padding: 0 5rem;
+    text-align: center;
+}
+
+.menu-item a {
+    color: var(--scots-navy);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'IM Fell English', serif;
+    line-height: 2em;
+    letter-spacing: .3rem;
+    padding-left: .3rem;
+}
+
+.menu-item a:hover {
+    background-color: var(--anti-royalty-blue);
+    color: var(--paper-sheet-grey);
+}
+
+.header-divider {
+    width: 5rem;
+}
+
+.divider {
+    border-width: 1px;
+    text-align: center;
+    color: var(--scots-navy);
+    border-style: solid;
+}
+
+/* content */
+
+.description {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 45%;
+    max-width: 50rem;
+}
+
+.first-word {
+    font-size: 1.2em;
+    font-family: 'Garamond Bold', serif;
+    text-transform: uppercase;
+}
+
+.description p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    display: inline;
+}
+
+.announcement-text {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-right: -0.5rem;
+}
+
+.accent-text {
+    /* font-size: 1.5em;
+    font-family: 'IM Fell English', serif;
+    text-transform: uppercase; */
+    font-size: 2em;
+    font-family: 'IM Fell English Italic', serif;
+    text-transform: capitalize;
+    line-height: 2em;
+}
+
+.link-in-text {
+    text-decoration: none;
+    color: var(--scots-navy)
+}
+
+.link-in-text:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    /* text-decoration-color: var(--anti-royalty-blue); */
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.content-divider {
+    width: 5rem;
+    border-width: 1px;
+    text-align: center;
+    color: var(--scots-navy);
+    opacity: 30%;
+    border-style: solid;
+    margin: 3rem auto 3rem auto;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--scots-navy);
+    color: var(--paper-sheet-grey);
+    bottom: 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 0 10rem 0;
+}
+
+footer ul a {
+    color: var(--paper-sheet-grey);
+    font-family: 'Garamond Light', serif;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.footer-column {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-column ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.email {
+    text-transform: lowercase;
+}
+
+.footer-divider {
+    opacity: 80%;
+    width: 2rem;
+    text-align: center;
+}
+
+.footer-year {
+    opacity: 80%;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 812px) {
+    .column {
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
