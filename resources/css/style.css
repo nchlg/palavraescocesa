@@ -47,7 +47,8 @@
 :root {
     --paper-sheet-grey: #fffefa;
     --scots-navy: #161b1f;
-    --anti-royalty-blue: #4175AA;
+    --soft-charcoal: #5D7383;
+    --anti-royalty-blue: #6796C5;
     --soft-blue: #9AB8D6;
 }
 
@@ -67,35 +68,40 @@ body {
     font-family: 'Garamond Light', serif;
 }
 
-header, footer {
-    padding: 3rem 15%;
-}
-
 /* header */
 
-#idioms {
-    position: relative;
-    text-align: center;
-    top: -1rem;
-    right: -1rem;
+header {
+    padding: 1rem 15% 3rem 15%;
 }
 
-#idioms a {
-    color: var(--scots-navy);
-    font-family: 'Garamond Light', serif;
+/* only visible on big screens */
+#header-idioms {
+    position: relative;
+    text-align: right;
+    padding-bottom: 1rem;
     font-size: 0.8rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
+    color: var(--soft-charcoal);
+}
+
+#header-idioms a {
+    color: var(--soft-charcoal);
+    font-family: 'IM Fell English Italic', serif;
+    /* font-family: 'Garamond Light Italic', serif; */
+    /* text-transform: uppercase; */
     text-decoration: none;
     line-height: 2.2em;
-    padding-right: 1em;
+    /* padding-right: 1em; */
 }
 
-#idioms a:hover { 
+#header-idioms a:hover { 
+    color: var(--scots-navy);
     text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
+    
+}
+
+.idiom-divider {
+    display: inline;
+    padding: 0 .2rem;
 }
 
 /* logo */
@@ -187,26 +193,26 @@ ul {
 }
 
 .first-word {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-family: 'Garamond Bold', serif;
     text-transform: uppercase;
 }
 
 .description p {
-    font-size: 1.2em;
-    line-height: 1.5em;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     display: inline;
 }
 
 .announcement-text {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .5rem;
     margin-right: -0.5rem;
 }
 
 .accent-text {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     font-family: 'IM Fell English Italic', serif;
     text-transform: capitalize;
     line-height: 2em;
@@ -239,6 +245,7 @@ ul {
 footer {
     background-color: var(--scots-navy);
     color: var(--paper-sheet-grey);
+    padding: 3rem 15%;
     bottom: 0;
 }
 
@@ -279,7 +286,22 @@ footer a:hover {
 }
 
 .email {
+    opacity: 100%;
     text-transform: lowercase;
+    letter-spacing: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+#footer-paragraph {
+    opacity: 80%;
+}
+
+/* only visible on mobile */
+.footer-idioms {
+    display: none;
 }
 
 .footer-divider {
@@ -297,9 +319,85 @@ footer a:hover {
 /* mobile */
 
 @media only screen and (max-width: 812px) {
-    .column {
-        display: block;
-        width: 100%;
-        margin-bottom: 2rem;
+    
+    /* header */
+
+    #header-idioms {
+        display: none;
     }
+
+    .logo {
+        padding-top: 2rem;
+    }
+
+    .logo-image {
+        width: 5rem;
+        height: auto;
+    }
+
+    .contrast-with-logo {
+        display: none;
+    }
+
+    /* menu */
+
+    .menu-item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* description */
+
+    .description {
+        width: 70%;
+        max-width: 80%;
+    }
+
+    .description p, .first-word {
+        font-size: 1rem;
+    }
+
+    .announcement-text {
+        letter-spacing: .3rem;
+    }
+
+    .accent-text {
+        font-size: 1.1rem;
+    }
+
+    /* footer */
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem 0 2rem 0;
+    }
+
+    .footer-column {
+        padding-bottom: 3rem;
+    }
+
+    .footer-column ul {
+        text-align: center;
+    }
+
+    .footer-idioms {
+        display: block;
+    }
+
+    .footer-idioms li:first-child {
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        padding: .5rem 0;
+    }
+
+    #footer-language-english, #footer-language-portuguese, #footer-language-scots {
+        font-family: 'Garamond Light Italic', serif;
+        font-size: 1.2rem;
+        text-transform: lowercase;
+    } 
 }
