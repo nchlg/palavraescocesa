@@ -86,11 +86,8 @@ header {
 #header-idioms a {
     color: var(--soft-charcoal);
     font-family: 'IM Fell English Italic', serif;
-    /* font-family: 'Garamond Light Italic', serif; */
-    /* text-transform: uppercase; */
     text-decoration: none;
     line-height: 2.2em;
-    /* padding-right: 1em; */
 }
 
 #header-idioms a:hover { 
