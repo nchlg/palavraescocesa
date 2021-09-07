@@ -28,27 +28,33 @@
     </head>
     <body>
         <header>
+            <nav id="idioms">
+                <a href="/en" id="lang-en">en</a>
+                <a href="/" id="lang-pt">pt</a>
+                <a href="/scot" id="lang-scot">scot</a>
+            </nav>
             <div class="logo"> 
-                <a href="/" >
+                <a href="/" id="palavra-logo">
                     <img src="../resources/images/palavra.svg" alt="logotipo do palavra escocesa: 
-                    'palavra' escrito na frente de um ramo de pinheiro escocês." class="coloured-logo"/>
-                    <img src="../resources/images/palavra_hover.svg" alt="logotipo do palavra escocesa: 
-                    'palavra' escrito na frente de um ramo de pinheiro escocês." class="contrasting-logo" />
+                    'palavra' escrito na frente de um ramo de pinheiro escocês." class="logo-image"/>
                 </a>
+                <div class="contrast-with-logo"></div>
             </div>
             <nav class="menu">
                 <ul>
                     <li class="menu-item">
-                        <a href="/sobre">sobre</a>
+                        <a href="/sobre" id="#menu-sobre">sobre</a>
                     </li>
                     <!-- <li class="menu-item">
-                        <a href="/a-lingua-escocesa">a língua escocesa</a>
+                        <a href="/a-lingua-escocesa"
+                        id="#menu-escoces">a língua escocesa</a>
                     </li>
                     <li class="menu-item">
-                        <a href="/recomendacoes">recomendações</a>
+                        <a href="/recomendacoes"
+                        id="#menu-recomendacoes">recomendações</a>
                     </li> -->
                     <li class="menu-item">
-                        <a href="/contato">contato</a>
+                        <a href="/contato" id="#menu-contato">contato</a>
                     </li>
                 </ul>
             </nav>
@@ -63,15 +69,17 @@
             <p class="announcement-text">Palavras novas todas as</p>
             <br>
             <br>
-            <span class="accent-text">segundas, quartas & sextas</span>
+            <span class="accent-text">segundas & sextas</span>
             <br>
             <br>
-            <p class="announcement-text short-text">no</p>
+            <p class="announcement-text">no</p>
             <br>
             <br>
             <span class="accent-text">
-                <a href="https://instagram.com/palavraescocesa" class="link-in-text">Instagram</a> & 
-                <a href="https://twitter.com/palavraescocesa" class="link-in-text">Twitter</a></span>
+                <a href="https://instagram.com/palavraescocesa" class="link-in-text" 
+                id="#instagram-on-text">Instagram</a> & 
+                <a href="https://twitter.com/palavraescocesa" class="link-in-text" 
+                id="#twitter-on-text">Twitter</a></span>
             <hr class="divider content-divider">
         </div>
         <footer>
@@ -79,26 +87,32 @@
                 <div class="footer-column">
                     <ul>
                         <li>
-                            <a href="/" class="class-a">página inicial</a>
+                            <a href="/" 
+                            id="#footer-pagina-inicial">página inicial</a>
                         </li>
                         <li>
-                            <a href="/sobre">sobre</a>
+                            <a href="/sobre" 
+                            id="#footer-sobre">sobre</a>
                         </li>
                         <li>
-                            <a href="https://instagram.com/palavraescocesa">intagram</a>
+                            <a href="https://instagram.com/palavraescocesa" 
+                            id="#footer-instagram">intagram</a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/palavraescocesa">twitter</a>
+                            <a href="https://twitter.com/palavraescocesa"
+                            id="#footer-twitter">twitter</a>
                         </li>
                         <li>
-                            <a href="https://tiktok.com/@palavraescocesa">tiktok</a>
+                            <a href="https://tiktok.com/@palavraescocesa"
+                            id="#footer-tiktok">tiktok</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <ul>
                         <li>
-                            <a href="/contato">contato</a>
+                            <a href="/contato"
+                            id="#footer-contato">contato</a>
                         </li>
                         <li>
                             <p>
@@ -106,7 +120,8 @@
                                 <br>
                                 porto alegre, rio grande do sul, brasil
                                 <br>
-                                <a href="mailto:contato@palavra.scot" class="email">contato@palavra.scot</a>
+                                <a href="mailto:contato@palavra.scot" class="email"
+                                id="#footer-email">contato@palavra.scot</a>
                             </p>
                             </a>
                         </li>
