@@ -1,0 +1,79 @@
+/* fonts */
+
+@font-face {
+    font-family: 'IM Fell English';
+    src: url('../fonts/imfellenglish-regular-webfont.woff2') format('woff2'),
+         url('../fonts/imfellenglish-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IM Fell English Italic';
+    src: url('../fonts/imfellenglish-italic-webfont.woff2') format('woff2'),
+         url('../fonts/imfellenglish-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Garamond Bold';
+    src: url('../fonts/cormorantgaramond-bold-webfont.woff2') format('woff2'),
+         url('../fonts/cormorantgaramond-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Garamond Light';
+    src: url('../fonts/cormorantgaramond-light-webfont.woff2') format('woff2'),
+         url('../fonts/cormorantgaramond-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Garamond Light Italic';
+    src: url('../fonts/cormorantgaramond-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/cormorantgaramond-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* vars */
+
+:root {
+    --paper-sheet-grey: #fffefa;
+    --scots-navy: #161b1f;
+    --soft-charcoal: #5D7383;
+    --anti-royalty-blue: #6796C5;
+    --soft-blue: #9AB8D6;
+}
+
+/* page title */
+
+h1 {
+    font-size: 2rem;
+    font-family: 'IM Fell English', serif;
+    text-transform: uppercase;
+    padding: 0 0 3rem 0;
+    margin: 0;
+}
+
+#conjunction {
+    font-size: 0.8rem;
+    font-family: 'Garamond Bold', serif;
+}
+
+#email-on-text {
+    /* font-family: 'IM Fell English Italic', serif; */
+    font-family: 'IM Fell English Italic', serif;
+    font-size: 1.6rem;
+    text-transform: lowercase;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+}

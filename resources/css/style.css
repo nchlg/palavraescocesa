@@ -195,7 +195,7 @@ ul {
     text-transform: uppercase;
 }
 
-.description p {
+.description .plain-text {
     font-size: 1.2rem;
     line-height: 1.5rem;
     display: inline;
@@ -204,15 +204,16 @@ ul {
 .announcement-text {
     font-size: 1.2rem;
     text-transform: uppercase;
-    letter-spacing: .5rem;
+    letter-spacing: .4rem;
     margin-right: -0.5rem;
+    line-height: 2rem;
 }
 
 .accent-text {
     font-size: 1.8rem;
     font-family: 'IM Fell English Italic', serif;
     text-transform: capitalize;
-    line-height: 2em;
+    line-height: 2rem;
 }
 
 .link-in-text {
@@ -223,7 +224,7 @@ ul {
 .link-in-text:hover {
     text-decoration: underline;
     text-decoration-style: wavy;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
     text-underline-offset: 3px;
 }
 
