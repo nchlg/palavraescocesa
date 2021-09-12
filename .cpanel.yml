@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/`whoami`/public_html/
+    - export DEPLOYPATH=/home/`$USER`/public_html/
     - /bin/cp pt/* $DEPLOYPATH
     - /bin/cp -R en $DEPLOYPATH
     - /bin/cp -R resources $DEPLOYPATH
