@@ -1,8 +1,10 @@
 # palavra.scot
-[web page](https://palavra.scot) for palavra escocesa.
+welcome.
+
+this is the [web page](https://palavra.scot) for palavra escocesa.
 
 ## tools
-this website is developed using html and css only.
+this website is developed with html and css only.
 
 ## languages
 our website supports 3 idioms:
@@ -11,4 +13,4 @@ our website supports 3 idioms:
 * scots
 
 ## improvements
-feel free to tell us how to improve our web page.
+feel free to reach out and tell us how we can improve our web page.

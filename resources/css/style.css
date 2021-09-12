@@ -52,10 +52,15 @@
     --soft-blue: #9AB8D6;
 }
 
-/* focus */
+/* pseudo-elements */
 
 a:focus {
     outline-color: var(--anti-royalty-blue);
+}
+
+::selection {
+    background: var(--anti-royalty-blue);
+    color: var(--paper-sheet-grey);
 }
 
 /* body */
@@ -79,7 +84,7 @@ header {
     position: relative;
     text-align: right;
     padding-bottom: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--soft-charcoal);
 }
 
@@ -87,7 +92,7 @@ header {
     color: var(--soft-charcoal);
     font-family: 'IM Fell English Italic', serif;
     text-decoration: none;
-    line-height: 2.2em;
+    line-height: 2.2rem;
 }
 
 #header-idioms a:hover { 
@@ -112,7 +117,7 @@ header {
 .contrast-with-logo:before, .contrast-with-logo:after {
     position: absolute;
     width: 10rem;
-    height: 5.2em;
+    height: 5.2rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -157,7 +162,8 @@ ul {
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'IM Fell English', serif;
-    line-height: 2em;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
     letter-spacing: .3rem;
     padding-left: .3rem;
 }
@@ -173,6 +179,7 @@ ul {
 
 .divider {
     border-width: 1px;
+    background: var(--scots-navy);
     text-align: center;
     color: var(--scots-navy);
     border-style: solid;
@@ -190,19 +197,19 @@ ul {
 }
 
 .first-word {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: 'Garamond Bold', serif;
     text-transform: uppercase;
 }
 
 .description .plain-text {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     display: inline;
 }
 
 .announcement-text {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     letter-spacing: .4rem;
     margin-right: -0.5rem;
@@ -233,6 +240,7 @@ ul {
     border-width: 1px;
     text-align: center;
     color: var(--scots-navy);
+    background: var(--scots-navy);
     opacity: 30%;
     border-style: solid;
     margin: 3rem auto 3rem auto;
@@ -245,6 +253,7 @@ footer {
     color: var(--paper-sheet-grey);
     padding: 3rem 15%;
     bottom: 0;
+    font-size: 1rem;
 }
 
 .footer-content {
@@ -303,9 +312,12 @@ footer p {
 }
 
 .footer-divider {
+    color: var(--paper-sheet-grey);
+    background: var(--paper-sheet-grey);
     opacity: 80%;
     width: 2rem;
     text-align: center;
+    border-style: solid;
 }
 
 .footer-year {
@@ -395,7 +407,6 @@ footer p {
 
     #footer-language-english, #footer-language-portuguese, #footer-language-scots {
         font-family: 'Garamond Light Italic', serif;
-        font-size: 1.2rem;
         text-transform: lowercase;
     } 
 }
