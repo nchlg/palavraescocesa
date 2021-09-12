@@ -85,8 +85,10 @@ h1 {
     padding-bottom: 1rem;
 }
 
-.italic-text {
+.error-text {
     font-family: 'Garamond Light Italic', serif;
+    font-size: 1rem;
+    line-height: 3rem;
 }
 
 .foreign-text {
@@ -101,9 +103,21 @@ h1 {
 }
 
 .error-divider {
-    border-style: inset;
-    border-width: 1px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--anti-royalty-blue);
     width: 40%;
     opacity: 60%;
     margin: 5rem auto;
+}
+
+.error-title {
+    font-family: 'Garamond Bold', serif;
+}
+
+/* mobile */
+@media only screen and (max-width: 812px) {
+    .error-divider {
+        width: 70%;
+    }
 }
