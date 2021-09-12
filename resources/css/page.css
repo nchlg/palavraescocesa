@@ -63,19 +63,47 @@ h1 {
     margin: 0;
 }
 
+/* content */
+
+.announcement-text {
+    line-height: 4rem;
+}
+
 #conjunction {
     font-size: 0.8rem;
     font-family: 'Garamond Bold', serif;
 }
 
 #email-on-text {
-    /* font-family: 'IM Fell English Italic', serif; */
     font-family: 'IM Fell English Italic', serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-transform: lowercase;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.italic-text {
+    font-family: 'Garamond Light Italic', serif;
+}
+
+.foreign-text {
+    padding-bottom: 1rem;
+}
+
+#erro-pagina-inicial, #error-home {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+}
+
+.error-divider {
+    border-style: inset;
+    border-width: 1px;
+    width: 40%;
+    opacity: 60%;
+    margin: 5rem auto;
 }
