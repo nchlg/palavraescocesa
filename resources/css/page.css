@@ -69,11 +69,6 @@ h1 {
     line-height: 4rem;
 }
 
-#conjunction {
-    font-size: 0.8rem;
-    font-family: 'Garamond Bold', serif;
-}
-
 #email-on-text {
     font-family: 'IM Fell English Italic', serif;
     font-size: 1.5rem;
@@ -113,6 +108,42 @@ h1 {
 
 .error-title {
     font-family: 'Garamond Bold', serif;
+}
+
+/* about */
+
+.first-word-but-smaller {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: 'Garamond Light', serif;
+}
+
+.italic-text {
+    font-family: 'Garamond Light Italic', serif;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-family: 'IM Fell English', serif;
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    padding-bottom: 3rem;
+    line-height: 3rem;
+}
+
+.topic {
+    padding-top: 5rem;
+}
+
+.long-text {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    text-align: justify;
+    margin: 0;
+}
+
+.long-text a {
+    color: var(--anti-royalty-blue);
 }
 
 /* mobile */
