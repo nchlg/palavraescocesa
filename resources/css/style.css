@@ -83,8 +83,8 @@ header {
 #header-idioms {
     position: relative;
     text-align: right;
-    padding: 1rem 5% 1rem 0;
-    /* max-width: 90%; */
+    padding: 1rem 0;
+    max-width: 90%;
     font-size: 1rem;
     color: var(--scots-navy);
     opacity: 60%;
@@ -92,15 +92,13 @@ header {
 
 #header-idioms a {
     color: var(--scots-navy);
-    font-family: 'IM Fell English Italic', serif;
+    font-family: 'IM Fell English', serif;
     text-decoration: none;
     line-height: 2.2rem;
-    padding: .1rem;
+    padding: .2rem .2rem 0 .2rem;
 }
 
 #header-idioms a:hover { 
-    /* color: var(--scots-navy);
-    text-decoration: underline; */
     background: var(--scots-navy);
     color: var(--paper-sheet-grey)
     
@@ -170,7 +168,8 @@ ul {
     font-size: 1.25rem;
     line-height: 2.5rem;
     letter-spacing: .3rem;
-    padding-left: .3rem;
+    padding: .2rem .2rem .2rem .5rem;
+    /* padding-left: .3rem; */
 }
 
 .menu-item a:hover {
@@ -211,7 +210,7 @@ ul {
 .description .plain-text {
     font-size: 1.5rem;
     line-height: 1.8rem;
-    display: inline-block;
+    display: inline;
 }
 
 .announcement-text {
@@ -219,14 +218,14 @@ ul {
     text-transform: uppercase;
     letter-spacing: .4rem;
     margin-right: -0.5rem;
-    line-height: 2rem;
+    line-height: 3rem;
 }
 
 .accent-text {
     font-size: 1.8rem;
     font-family: 'IM Fell English Italic', serif;
     text-transform: capitalize;
-    line-height: 2rem;
+    line-height: 3rem;
 }
 
 .link-in-text {
@@ -235,6 +234,8 @@ ul {
 }
 
 .link-in-text:hover {
+    color: var(--anti-royalty-blue);
+    text-decoration-color: var(--anti-royalty-blue);
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-thickness: 1px;
@@ -250,6 +251,15 @@ ul {
     opacity: 30%;
     border-style: solid;
     margin: 3rem auto 3rem auto;
+}
+
+.wavy-divider {
+    margin: 3rem auto 4rem auto;
+    word-spacing: 5rem;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--anti-royalty-blue);
 }
 
 /* footer */
@@ -382,10 +392,6 @@ footer p {
     .description {
         width: 70%;
         max-width: 80%;
-    }
-
-    .description p, .first-word {
-        font-size: 1rem;
     }
 
     .announcement-text {

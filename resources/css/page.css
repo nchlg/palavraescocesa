@@ -70,14 +70,22 @@ h1 {
 }
 
 #email-on-text {
-    font-family: 'IM Fell English Italic', serif;
+    display: block;
+    font-family: 'Garamond Bold', serif;
     font-size: 1.5rem;
     text-transform: lowercase;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    letter-spacing: .3rem;
+}
+
+#email-on-text a {
+    text-decoration: none;
+    color: var(--scots-navy);
+    padding: 0 0 .3rem .3rem;
+}
+
+#email-on-text a:hover {
+    background: var(--anti-royalty-blue);
+    color: var(--paper-sheet-grey);
 }
 
 .error-text {
@@ -88,26 +96,6 @@ h1 {
 
 .foreign-text {
     padding-bottom: 1rem;
-}
-
-#erro-pagina-inicial, #error-home {
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 5px;
-}
-
-.error-divider {
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--anti-royalty-blue);
-    width: 40%;
-    opacity: 60%;
-    margin: 5rem auto;
-}
-
-.error-title {
-    font-family: 'Garamond Bold', serif;
 }
 
 /* about */
@@ -144,11 +132,16 @@ h2 {
 
 .long-text a {
     color: var(--anti-royalty-blue);
+    font-family: 'Garamond Bold', serif;
 }
 
 /* mobile */
 @media only screen and (max-width: 812px) {
     .error-divider {
         width: 70%;
+    }
+
+    #email-on-text {
+        font-size: 1rem;
     }
 }
