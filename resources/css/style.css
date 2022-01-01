@@ -147,6 +147,17 @@ header {
     background-color: var(--soft-blue);
 }
 
+#palavra-logo:focus-visible ~ .contrast-with-logo:after {
+    opacity: 100%;
+    background-color: var(--soft-blue);
+}
+
+
+#palavra-logo:focus ~ .contrast-with-logo:after {
+    opacity: 100%;
+    background-color: var(--soft-blue);
+}
+
 /* menu */
 
 ul {
