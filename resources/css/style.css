@@ -14,7 +14,6 @@
          url('../fonts/imfellenglish-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -23,23 +22,22 @@
          url('../fonts/cormorantgaramond-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'Garamond Light';
     src: url('../fonts/cormorantgaramond-light-webfont.woff2') format('woff2'),
          url('../fonts/cormorantgaramond-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'Garamond Light Italic';
     src: url('../fonts/cormorantgaramond-lightitalic-webfont.woff2') format('woff2'),
          url('../fonts/cormorantgaramond-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /* vars */
@@ -69,14 +67,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--paper-sheet-grey);
+    /* background-color: #fff; */
     color: var(--scots-navy);
     font-family: 'Garamond Light', serif;
+    background-image: url('../images/bg-groovepaper.png');
 }
 
 /* header */
 
 header {
     padding: 1rem 15% 3rem 15%;
+    position: relative;
 }
 
 /* only visible on big screens */
@@ -92,13 +93,15 @@ header {
 
 #header-idioms a {
     color: var(--scots-navy);
-    font-family: 'IM Fell English', serif;
+    font-family: 'IM Fell DW Pica', serif;
     text-decoration: none;
     line-height: 2.2rem;
     padding: .2rem .2rem 0 .2rem;
 }
 
-#header-idioms a:hover { 
+#header-idioms a:hover,
+#header-idioms a:focus-visible,
+#header-idioms a:focus { 
     background: var(--scots-navy);
     color: var(--paper-sheet-grey)
     
@@ -162,7 +165,6 @@ ul {
 
 .menu-item a {
     color: var(--scots-navy);
-    text-transform: uppercase;
     text-decoration: none;
     font-family: 'IM Fell English', serif;
     font-size: 1.25rem;
@@ -172,17 +174,19 @@ ul {
     /* padding-left: .3rem; */
 }
 
-.menu-item a:hover {
+.menu-item a:hover,
+.menu-item a:focus-visible,
+.menu-item a:focus {
     background-color: var(--anti-royalty-blue);
     color: var(--paper-sheet-grey);
 }
 
 .header-divider {
-    width: 5rem;
+    width: 2rem;
 }
 
 .divider {
-    border-width: 1px;
+    border-width: 2px;
     background: var(--scots-navy);
     text-align: center;
     color: var(--scots-navy);
@@ -233,7 +237,9 @@ ul {
     color: var(--scots-navy)
 }
 
-.link-in-text:hover {
+.link-in-text:hover, 
+.link-in-text:focus-visible,
+.link-in-text:focus {
     color: var(--anti-royalty-blue);
     text-decoration-color: var(--anti-royalty-blue);
     text-decoration: underline;
@@ -290,7 +296,9 @@ footer ul a {
     line-height: 2.2em;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus-visible,
+footer a:focus {
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-thickness: 1px;

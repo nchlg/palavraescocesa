@@ -14,7 +14,6 @@
          url('../fonts/imfellenglish-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -23,23 +22,22 @@
          url('../fonts/cormorantgaramond-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'Garamond Light';
     src: url('../fonts/cormorantgaramond-light-webfont.woff2') format('woff2'),
          url('../fonts/cormorantgaramond-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'Garamond Light Italic';
     src: url('../fonts/cormorantgaramond-lightitalic-webfont.woff2') format('woff2'),
          url('../fonts/cormorantgaramond-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /* vars */
@@ -83,7 +81,9 @@ h1 {
     padding: 0 0 .3rem .3rem;
 }
 
-#email-on-text a:hover {
+#email-on-text a:hover,
+#email-on-text a:focus-visible,
+#email-on-text a:focus {
     background: var(--anti-royalty-blue);
     color: var(--paper-sheet-grey);
 }
@@ -133,6 +133,11 @@ h2 {
 .long-text a {
     color: var(--anti-royalty-blue);
     font-family: 'Garamond Bold', serif;
+}
+
+/* contact */
+#contact-info {
+    margin: 0;
 }
 
 /* mobile */
