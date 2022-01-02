@@ -245,7 +245,7 @@ ul {
 
 .link-in-text {
     text-decoration: none;
-    color: var(--scots-navy)
+    color: var(--scots-navy);
 }
 
 .link-in-text:hover, 

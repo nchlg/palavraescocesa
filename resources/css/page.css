@@ -140,6 +140,29 @@ h2 {
     margin: 0;
 }
 
+/* podcast */
+#podcast-cover {
+    width: 300px;
+    padding-bottom: 3rem;
+}
+
+.link-hub a {
+    text-transform: lowercase;
+    font-family: 'IM Fell English', serif;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+.link-hub-web {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.link-hub-mobile {
+    display: none;
+}
+
 /* mobile */
 @media only screen and (max-width: 812px) {
     .error-divider {
@@ -148,5 +171,25 @@ h2 {
 
     #email-on-text {
         font-size: 1rem;
+    }
+
+    /* podcast */
+
+    #podcast-cover {
+        width: 100%;
+    }
+
+    .link-hub-web {
+        display: none;
+    }
+
+    .link-hub-mobile {
+        display: block;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .link-hub-mobile a {
+        letter-spacing: .3rem;
     }
 }
