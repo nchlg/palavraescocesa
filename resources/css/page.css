@@ -115,12 +115,12 @@ h2 {
     font-family: 'IM Fell English', serif;
     text-transform: uppercase;
     letter-spacing: .8rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     line-height: 3rem;
 }
 
 .topic {
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 
 .long-text {
@@ -133,6 +133,12 @@ h2 {
 .long-text a {
     color: var(--anti-royalty-blue);
     font-family: 'Garamond Bold', serif;
+}
+
+#nic-picture {
+    width: 300px;
+    margin: 1rem 0 2rem 0;
+    border-radius: 50%;
 }
 
 /* contact */
@@ -172,6 +178,11 @@ h2 {
 
     #email-on-text {
         font-size: 1rem;
+    }
+
+    /* about */
+    #nic-picture {
+        width: 80%;
     }
 
     /* podcast */
